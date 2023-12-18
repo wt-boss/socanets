@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="2dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginVertical="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/phone" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Telephone XR"
+            android:textColor="@color/color_text"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/textViewPrix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="XAF 150 000"
+            android:textColor="@color/color_text"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textViewName"
+            app:layout_constraintStart_toStartOf="@+id/textViewName"
+            app:layout_constraintTop_toBottomOf="@id/textViewName" />
+
+        <TextView
+            android:id="@+id/textViewSpecialPrix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="XAF 100 000"
+            android:textColor="@color/color_btn_orange"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/textViewPrix"
+            app:layout_constraintStart_toStartOf="@+id/textViewPrix"
+            app:layout_constraintTop_toBottomOf="@id/textViewPrix" />
+
+
+        <TextView
+            android:id="@+id/btn_commander"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Commander"
+            android:textColor="@color/color_primary"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/textViewSpecialPrix"
+            app:layout_constraintStart_toStartOf="@+id/textViewSpecialPrix"
+            app:layout_constraintTop_toBottomOf="@id/textViewSpecialPrix" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

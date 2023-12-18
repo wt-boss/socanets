@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_item_boutique"
+        android:icon="@drawable/ic_baseline_shop_24"
+        android:title="Boutique" />
+    <item
+        android:id="@+id/menu_item_services"
+        android:title="Nos Services">
+        <menu>
+            <item android:title="VSAT" android:id="@+id/menu_item_vsat" />
+            <item android:title="Fibre Optique" android:id="@+id/menu_item_fibre_optique"/>
+            <item android:title="Vidéo Surveillance" android:id="@+id/menu_item_videosurveillance"/>
+            <item android:title="Contrôle d’accès" android:id="@+id/menu_item_controle_acces"/>
+            <item android:title="Alarme Anti intrusion" android:id="@+id/menu_item_alarme_intrusion"/>
+            <item android:title="Système de Sécurité Incendie" android:id="@+id/menu_item_securite_incendie"/>
+            <item android:title="Téléphonie mobile par satellite" android:id="@+id/menu_item_telephonie_satellite"/>
+            <item android:title="Tracking" android:id="@+id/menu_item_tracking"/>
+            <item android:title="Réseaux informatiques et Conseils" android:id="@+id/menu_item_reseaux_conseils"/>
+            <item android:title="Visio Conférence" android:id="@+id/menu_item_visioconference"/>
+            <item android:title="Compteuses de Billets" android:id="@+id/menu_item_compteuses_billets"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_item_emplois"
+        android:icon="@drawable/baseline_work_24"
+        android:title="Emplois">
+    </item>
+
+    <item
+        android:id="@+id/menu_item_sav"
+        android:icon="@drawable/baseline_home_repair_service_24"
+        android:title="SAV" />
+
+    <item
+        android:id="@+id/menu_item_about"
+        android:icon="@drawable/baseline_emoji_emotions_24"
+        android:title="A propos">
+    </item>
+</menu>

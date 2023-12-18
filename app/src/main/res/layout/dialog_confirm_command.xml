@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2022 By builder Emerick
+  -->
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:padding="5dp"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" " />
+
+            <ImageButton
+
+                android:id="@+id/btn_close_dialog_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/background_button_primary"
+                android:backgroundTint="@color/color_red_download"
+                android:textAlignment="textEnd"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                app:srcCompat="@drawable/baseline_close_24"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:fontFamily="@font/poppins_regular"
+            android:justificationMode="inter_word"
+            android:text="Entrez votre Email : "
+            android:textColor="@color/black" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:hint="Email*"
+            app:hintTextColor="@color/black"
+            app:boxBackgroundColor="@color/white"
+            android:layout_marginBottom="@dimen/default_margin"
+            app:startIconDrawable="@drawable/baseline_alternate_email_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_border_form"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/default_padding_form" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_option"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="0dp"
+                style="@style/view_style"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/txt_annuler_dialog_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@color/color_btn_action"
+                    android:textColor="@color/color_primary"
+                    android:text="Annuler" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_height="match_parent"
+                        android:layout_width="2dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@color/color_gray_50"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_continuer_dialog_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@color/color_btn_action"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/color_primary"
+                    android:text="Continuer" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
